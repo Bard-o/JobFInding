@@ -1,0 +1,23 @@
+# Environment secrets
+.env
+
+# Telethon session files
+*.session
+*.session-journal
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+app/.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# other shi
+documentation/implementation_plan.md
