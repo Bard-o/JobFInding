@@ -5,23 +5,29 @@ services:
     ports:
       - "5432:5432"
     volumes:
+      # Specify the path to the volume where the database will be stored
       - pgdata:/var/lib/postgresql/data
+      # Specify the path to the init script that will be executed on first boot
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U $POSTGRES_USER -d $POSTGRES_DB"]
+      test: [ "CMD-SHELL", "pg_isready -U $POSTGRES_USER -d $POSTGRES_DB" ]
       interval: 5s
       retries: 5
+      # This ensure that the scraper container wait until the database is ready to use.
 
   scraper:
     build: ./app
     env_file: .env
     volumes:
       - ./sessions:/app/sessions
+      # This is where telethon will store the session file (in an actual direction on our folder, not within docker), so it will persist even if the container is deleted.
     depends_on:
+      # basically here it checks if the db is healthy, then run
       db:
         condition: service_healthy
     stdin_open: true
     tty: true
+    # Enable keyboard input and also a terminal for telethon singup, aslo for debugging.
 
 volumes:
-  pgdata:
+  pgdata: # Docker will manage personally this volume, so it will persist even if the container is deleted.

@@ -2,13 +2,18 @@
 Telegram client wrapper — authentication and message fetching.
 """
 
+# these come from the python standard library
 import json
 from datetime import timezone
 
+# these come from the libraries we installed in the requirements.txt file.
 from telethon import TelegramClient
 from telethon.tl.types import Message
+
+# this is a instance that saveseviaroment variables.
 from config import cfg
 
+# this is created once you singup in the app to use telethon.
 SESSION_PATH = "sessions/scraper_session"
 
 # ──────────────────────────────────────────────────────────────
@@ -29,12 +34,11 @@ def create_client() -> TelegramClient:
 
 async def authenticate(client: TelegramClient) -> None:
     """
-    Start the client and authenticate.
-
-    First run:  prompts for the verification code Telegram sends to your phone.
-    Later runs: reuses the session file automatically.
+    checks if it exist a session file, if not it will create one and ask you for a verification code sended to your phone number
     """
     await client.start(phone=cfg.TELEGRAM_PHONE)
+
+    # if you're aunthenticaded it will get your info for a little log.
     me = await client.get_me()
     print(f"✓ Authenticated as {me.first_name}")
 
@@ -69,3 +73,7 @@ async def fetch_messages(client: TelegramClient, chat: str) -> list[dict]:
 
     print(f"✓ Fetched {len(messages)} messages from '{chat}'")
     return messages
+
+# This last function piles up with insert_messages from database.py to get the messages from the telegram and save them in the database.
+# I could indeed say that those 2 functions are the core of the scraper. and the rest its just burocracy to standarice the code and make it compatible with docker 
+# Also the detail to this to be a public ropository make the data handling more delicated so i had to add some extra steps to make it more secure and reliable.

@@ -1,5 +1,6 @@
 -- Schema for raw Telegram messages (Iteration 1)
 -- This file runs automatically on first Postgres boot via docker-entrypoint-initdb.d
+-- This Schema is only temporal, later with the data proccessing pipeline, this will have changes...
 
 CREATE TABLE IF NOT EXISTS raw_messages (
     id              SERIAL PRIMARY KEY,

@@ -1,13 +1,22 @@
 """
 Entry point — orchestrates: authenticate → fetch → store.
-"""
 
+Damn if this first iteration was a thing, i cannot imagine the work that this project depares.
+"""
+# asyncio is a library that allow to run multiple functions at the same time.
+# this is called asynchronous programming.
+# this is useful for I/O bound tasks like network requests or database queries.
+# in this case we are using it for network requests to the Telegram API.
 import asyncio
+
+# funtions created earlier and imported from other modules.
 from telegram_client import create_client, authenticate, fetch_messages
 from database import insert_messages
 from config import cfg
 
-BATCH_SIZE = 500
+# Because our current limiter (specified in telegram_client) is 10, we set the batch size to 10.
+# remember to ajust it at your will
+BATCH_SIZE = 10
 
 
 async def main():
