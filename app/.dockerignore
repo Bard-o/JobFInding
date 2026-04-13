@@ -3,3 +3,5 @@ __pycache__/
 *.py[cod]
 *.session
 *.session-journal
+.env
+# i think there is no issue with adding this file...
