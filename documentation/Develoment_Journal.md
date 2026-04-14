@@ -14,3 +14,13 @@ a mayor issue with 'that' is that i want the backend of the app to be storaged i
 
 To begin with the docker part, for today i'm going to ount tho separated containers, one for 'app' witch is the Pyton script with Telethon and another Oner for the SQL database (PostgreSQL)
 
+
+## 13/04/2026
+
+After a LOT of reading a documentating code i reach the first iteration, it basically scraps a certain amount of messages from a Telegram chat and stores them in a SQL database.
+
+I'm pretty proud of this first iteration, it's not much but it's a start.
+
+But crearly there's A LOT  coming up, i have to make a way to cleanease the data, separate a non-ofer from a ofer and being capable of stract the most important information from the ofers (like the job title, the company, the salary, the location, etc.) and vier how to alocate that in the database schema 
+
+But right now, I'm going to update the README.md file to include the information of this first iteration. 
