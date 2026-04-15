@@ -1,0 +1,70 @@
+/* ── Message card ── */
+
+.message-card {
+  background: white;
+  border-radius: 12px;
+  border: 1.5px solid #c7c7cc;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease;
+}
+
+.message-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Metadata row (top of card) ── */
+
+.message-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid #e5e5ea;
+}
+
+.meta-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 8px;
+  border-right: 1px solid #e5e5ea;
+}
+
+.meta-cell:last-child {
+  border-right: none;
+}
+
+.meta-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6366f1;
+  text-transform: lowercase;
+}
+
+.meta-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e1e2e;
+  margin-top: 2px;
+}
+
+/* ── Text content (bottom of card) ── */
+
+.message-body {
+  padding: 16px 20px;
+}
+
+.body-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #6366f1;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.body-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #374151;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
