@@ -1,0 +1,11 @@
+# Web framework for the API
+fastapi==0.115.12
+
+# ASGI server to run FastAPI
+uvicorn==0.34.2
+
+# Driver to connect Python with PostgreSQL database
+psycopg2-binary==2.9.10
+
+# To read the secret variables from the .env file
+python-dotenv==1.1.0
