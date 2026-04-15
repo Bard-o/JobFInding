@@ -24,3 +24,13 @@ I'm pretty proud of this first iteration, it's not much but it's a start.
 But crearly there's A LOT  coming up, i have to make a way to cleanease the data, separate a non-ofer from a ofer and being capable of stract the most important information from the ofers (like the job title, the company, the salary, the location, etc.) and vier how to alocate that in the database schema 
 
 But right now, I'm going to update the README.md file to include the information of this first iteration. 
+
+## 14/04/2026
+
+today i did't did nothing, i mean, i just will star working after mmidnight, but what concerns about "what i did in the 14th day of april" no pal i didn't did nothing, i readed LN all day since my internet provider decided to fuck me, and also i did college work, so ok
+
+"tomorow" (today past midnight) i'll have a website where to test, that include integrate the fist API so
+
+and also i'll have resolved the first step in prossesing the data 
+
+*btw i just did this entry in the journal just for not losing that green dot in my github*
