@@ -34,3 +34,11 @@ today i did't did nothing, i mean, i just will star working after mmidnight, but
 and also i'll have resolved the first step in prossesing the data 
 
 *btw i just did this entry in the journal just for not losing that green dot in my github*
+
+## 15/04/2026
+
+i dedicated into introducing me to react, because i think is the best approach to the fonrtend part of the project 
+learning concepts like single page applications and components (functions than return html) show me why this is considered advance frontend.
+
+### Iteration 1.5
+Ok, for the 1.5 iteration I want to add ract to my stack, thats because is the best frontend tool that would help me with the graphs and chart i'm willing to use, also if a next iteration i decide to do a movile feature, it would save a lot of work
