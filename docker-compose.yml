@@ -29,5 +29,23 @@ services:
     tty: true
     # Enable keyboard input and also a terminal for telethon singup, aslo for debugging.
 
+  api:
+    build: ./api
+    env_file: .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      # The API needs the database to be ready before it can start serving requests
+      db:
+        condition: service_healthy
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      # The frontend needs the API to be running so the proxy can forward requests
+      - api
+
 volumes:
   pgdata: # Docker will manage personally this volume, so it will persist even if the container is deleted.
