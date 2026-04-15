@@ -11,6 +11,10 @@ __pycache__/
 *$py.class
 app/.venv/
 
+# Node / React
+frontend/node_modules/
+frontend/dist/
+
 # IDE
 .vscode/
 .idea/
