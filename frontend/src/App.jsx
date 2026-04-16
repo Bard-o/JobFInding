@@ -1,13 +1,19 @@
+// Import Hooks
 import { useState, useEffect } from "react";
+// Import Components
 import Header from "./components/Header.jsx";
 import MessageCard from "./components/MessageCard.jsx";
+// Import Styles
 import "./App.css";
 
+// Main component
 function App() {
+  // State variables
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // Fetch messages from API
   useEffect(() => {
     fetch("/api/messages?limit=50")
       .then((res) => {
@@ -24,6 +30,7 @@ function App() {
       });
   }, []);
 
+  // Render
   return (
     <>
       <Header />

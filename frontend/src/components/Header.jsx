@@ -11,6 +11,7 @@ function GitHubIcon() {
       xmlns="http://www.w3.org/2000/svg"
       aria-label="GitHub"
     >
+      {/* LMAOOOOOOOO */}
       <path
         fillRule="evenodd"
         clipRule="evenodd"
