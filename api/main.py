@@ -1,6 +1,8 @@
 """
 FastAPI backend — serves messages from the raw_messages table to the React frontend.
 
+I have to remind myself that this READS from the database, it does not write to it.
+
 Endpoints:
     GET /api/messages?limit=50&offset=0  →  returns a JSON array of messages
 """
@@ -16,19 +18,24 @@ from fastapi.middleware.cors import CORSMiddleware
 import psycopg2
 from psycopg2.extras import RealDictCursor
 
+# Create the FastAPI application instance
 app = FastAPI(title="JobFinding API")
 
 # Allow the React dev server to call this API (CORS)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # in production, lock this down to your frontend URL
+    allow_origins=["*"],  # in production, lock this down to your frontend URL, you dont want just anyone to access your API
     allow_methods=["GET"],
     allow_headers=["*"],
 )
 
 
 def get_connection():
-    """Create a new database connection using environment variables."""
+    """
+    Create a new database connection using the environment variables.
+    the second arguments in the .get methods are the default values, in case the environment variables are not set.
+    (remember to copy your .env file with your db credentials and telegram credentials)
+    """
     return psycopg2.connect(
         host=os.environ.get("POSTGRES_HOST", "db"),
         port=int(os.environ.get("POSTGRES_PORT", 5432)),
@@ -38,6 +45,9 @@ def get_connection():
     )
 
 
+""" 
+this is a decorator, it tells FastAPI that the following function should be called when a GET request is made to the /api/messages endpoint and should return JSON data.
+"""
 @app.get("/api/messages")
 def get_messages(
     limit: int = Query(default=50, ge=1, le=500),
@@ -49,6 +59,10 @@ def get_messages(
     """
     conn = get_connection()
     try:
+        """
+        RealDictCursor makes the cursor return rows as dictionaries instead of tuples
+        It save me the work to convert the file acording to the collumns names.
+        """
         with conn.cursor(cursor_factory=RealDictCursor) as cur:
             cur.execute(
                 """
@@ -75,6 +89,7 @@ def get_messages(
 
         return rows
     finally:
+        # dont forget to close the conection :P
         conn.close()
 
 

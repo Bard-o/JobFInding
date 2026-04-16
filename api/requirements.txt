@@ -1,7 +1,7 @@
 # Web framework for the API
 fastapi==0.115.12
 
-# ASGI server to run FastAPI
+# ASGI (Asynchronous Server Gateway Interface) server to run FastAPI (FastAPI requires a server)
 uvicorn==0.34.2
 
 # Driver to connect Python with PostgreSQL database
