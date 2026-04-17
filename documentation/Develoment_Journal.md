@@ -42,3 +42,9 @@ learning concepts like single page applications and components (functions than r
 
 ### Iteration 1.5
 Ok, for the 1.5 iteration I want to add ract to my stack, thats because is the best frontend tool that would help me with the graphs and chart i'm willing to use, also if a next iteration i decide to do a movile feature, it would save a lot of work
+
+## 16/04/2026
+
+Ok, personal info dump: i have other things to do, like tomorow i have a Fourier's analysis exam and the day after my band have a gig, but screw it, this data extraction have to be done, and i'm pretty sure i can do it in a day or two, so let's do it 
+
+right now une of my aideas is use the Kor library
