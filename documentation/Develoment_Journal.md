@@ -48,3 +48,7 @@ Ok, for the 1.5 iteration I want to add ract to my stack, thats because is the b
 Ok, personal info dump: i have other things to do, like tomorow i have a Fourier's analysis exam and the day after my band have a gig, but screw it, this data extraction have to be done, and i'm pretty sure i can do it in a day or two, so let's do it 
 
 right now une of my aideas is use the Kor library
+
+## 19/04/26
+
+Due i didn't did nothing
