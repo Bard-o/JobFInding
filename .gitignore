@@ -26,3 +26,6 @@ Thumbs.db
 # other shi
 documentation/implementation_plan.md
 documentation/ubuntu_server_setup.md
+
+# migration files
+db/migrations/*

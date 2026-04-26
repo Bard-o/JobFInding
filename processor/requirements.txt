@@ -1,0 +1,11 @@
+# NLP processing library
+spacy==3.8.4
+
+# Spanish language model (downloaded in Dockerfile)
+# es_core_news_sm==3.8.0
+
+# Driver to connect Python with PostgreSQL database
+psycopg2-binary==2.9.10
+
+# To read the secret variables from the .env file
+python-dotenv==1.1.0
