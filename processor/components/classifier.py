@@ -44,7 +44,7 @@ POSITIVE_EMOJIS = [
 NEGATIVE_KEYWORDS = [
     "ofertas en:", "follow us", "tag a friend", "sign up",
     "síguenos", "únete a", "join our", "subscribe",
-    "newsletter", "descuento", "discount", "promo",
+    "newsletter", "descuento", "discount", "promo", "promociones", "ofertas"
 ]
 
 # Minimum text length to even consider (very short = probably noise)
