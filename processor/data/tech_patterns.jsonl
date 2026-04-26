@@ -1,0 +1,47 @@
+{"label": "TECH", "pattern": [{"LOWER": "react"}]}
+{"label": "TECH", "pattern": [{"LOWER": "react"}, {"TEXT": "."}, {"LOWER": "js"}]}
+{"label": "TECH", "pattern": [{"LOWER": "reactjs"}]}
+{"label": "TECH", "pattern": [{"LOWER": "node"}, {"TEXT": "."}, {"LOWER": "js"}]}
+{"label": "TECH", "pattern": [{"LOWER": "nodejs"}]}
+{"label": "TECH", "pattern": [{"LOWER": "vue"}, {"TEXT": "."}, {"LOWER": "js"}]}
+{"label": "TECH", "pattern": [{"LOWER": "vuejs"}]}
+{"label": "TECH", "pattern": [{"LOWER": "next"}, {"TEXT": "."}, {"LOWER": "js"}]}
+{"label": "TECH", "pattern": [{"LOWER": "nextjs"}]}
+{"label": "TECH", "pattern": [{"LOWER": "typescript"}]}
+{"label": "TECH", "pattern": [{"LOWER": "javascript"}]}
+{"label": "TECH", "pattern": [{"LOWER": "python"}]}
+{"label": "TECH", "pattern": [{"LOWER": "java"}]}
+{"label": "TECH", "pattern": [{"LOWER": "go"}]}
+{"label": "TECH", "pattern": [{"LOWER": "golang"}]}
+{"label": "TECH", "pattern": [{"TEXT": "."}, {"LOWER": "net"}]}
+{"label": "TECH", "pattern": [{"LOWER": "dotnet"}]}
+{"label": "TECH", "pattern": [{"LOWER": "docker"}]}
+{"label": "TECH", "pattern": [{"LOWER": "kubernetes"}]}
+{"label": "TECH", "pattern": [{"LOWER": "k8s"}]}
+{"label": "TECH", "pattern": [{"LOWER": "aws"}]}
+{"label": "TECH", "pattern": [{"LOWER": "gcp"}]}
+{"label": "TECH", "pattern": [{"LOWER": "google"}, {"LOWER": "cloud"}]}
+{"label": "TECH", "pattern": [{"LOWER": "azure"}]}
+{"label": "TECH", "pattern": [{"LOWER": "postgresql"}]}
+{"label": "TECH", "pattern": [{"LOWER": "postgres"}]}
+{"label": "TECH", "pattern": [{"LOWER": "mysql"}]}
+{"label": "TECH", "pattern": [{"LOWER": "mongodb"}]}
+{"label": "TECH", "pattern": [{"LOWER": "redis"}]}
+{"label": "TECH", "pattern": [{"LOWER": "sql"}]}
+{"label": "TECH", "pattern": [{"LOWER": "terraform"}]}
+{"label": "TECH", "pattern": [{"LOWER": "ansible"}]}
+{"label": "TECH", "pattern": [{"LOWER": "jenkins"}]}
+{"label": "TECH", "pattern": [{"LOWER": "gitlab"}]}
+{"label": "TECH", "pattern": [{"LOWER": "github"}, {"LOWER": "actions"}]}
+{"label": "TECH", "pattern": [{"LOWER": "ci"}, {"TEXT": "/"}, {"LOWER": "cd"}]}
+{"label": "TECH", "pattern": [{"LOWER": "selenium"}]}
+{"label": "TECH", "pattern": [{"LOWER": "jira"}]}
+{"label": "TECH", "pattern": [{"LOWER": "scrum"}]}
+{"label": "TECH", "pattern": [{"LOWER": "power"}, {"LOWER": "bi"}]}
+{"label": "TECH", "pattern": [{"LOWER": "grafana"}]}
+{"label": "TECH", "pattern": [{"LOWER": "prometheus"}]}
+{"label": "TECH", "pattern": [{"LOWER": "html"}]}
+{"label": "TECH", "pattern": [{"LOWER": "css"}]}
+{"label": "TECH", "pattern": [{"LOWER": "tailwind"}]}
+{"label": "TECH", "pattern": [{"LOWER": "openai"}]}
+{"label": "TECH", "pattern": [{"LOWER": "oracle"}]}
