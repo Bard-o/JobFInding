@@ -47,5 +47,13 @@ services:
       # The frontend needs the API to be running so the proxy can forward requests
       - api
 
+  processor:
+    build: ./processor
+    env_file: .env
+    depends_on:
+      # The processor reads from raw_messages and writes to job_posts, so it needs the DB
+      db:
+        condition: service_healthy
+
 volumes:
   pgdata: # Docker will manage personally this volume, so it will persist even if the container is deleted.
